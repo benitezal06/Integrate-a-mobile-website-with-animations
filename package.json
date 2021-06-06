@@ -1,0 +1,22 @@
+{
+  "name": "integrate-a-mobile-website-with-animations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch styles/scss/_main.scss:styles/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benitezal06/Integrate-a-mobile-website-with-animations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benitezal06/Integrate-a-mobile-website-with-animations/issues"
+  },
+  "homepage": "https://github.com/benitezal06/Integrate-a-mobile-website-with-animations#readme",
+  "dependencies": {
+    "sass": "^1.34.1"
+  }
+}
