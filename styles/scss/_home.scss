@@ -1,0 +1,91 @@
+
+.nav{
+    padding: 20px;
+    text-align: center;
+
+    &__logo{
+        font-size: 200%;
+        font-family: 'Shrikhand', bold;
+        }
+    }
+
+.search{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    padding: 10px;
+    
+    &__input{
+        border: none;
+        background-color: #dddddd;
+    }
+
+    &__btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 60px;
+        background-color: #f6f6f6;
+    }
+
+    &__input::placeholder{
+        text-align: center;
+        
+    }
+}
+
+
+.menu{
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        counter-reset: 0;
+        padding-right: 0 50px;
+
+        i{
+            padding-right: 50px;
+        }
+        
+    }
+    &__card{
+        box-shadow: 0 0 5px 0 #aaa;
+        background-color: white;
+        border-radius: 15px ;
+        width: 95% ;
+        margin: 20px auto;
+        padding: 20px 33px;
+    }
+}
+
+.restaurant{
+    background-color: #f6f6f6 ;
+
+    .card{
+        box-shadow: 0 0 5px 0 #aaa;
+        background-color: white;
+        border-radius: 20px;
+        margin: 17px 0;
+
+        a{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden; 
+
+            .card__img{
+                height: 170px;
+                display: flex;
+                overflow: hidden;
+
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
