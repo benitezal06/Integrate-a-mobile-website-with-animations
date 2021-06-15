@@ -10,6 +10,11 @@ a {
   color: black;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
 .nav {
   padding: 20px;
   text-align: center;
@@ -62,28 +67,56 @@ a {
 .restaurant {
   background-color: #f6f6f6;
 }
-.restaurant .card {
-  box-shadow: 0 0 5px 0 #aaa;
-  background-color: white;
-  border-radius: 20px;
-  margin: 17px 0;
-}
-.restaurant .card a {
+
+.card__restaurant {
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 5px 0 #aaa;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px 20px;
 }
-.restaurant .card a .card__img {
+.card__restaurant .card__img {
   height: 170px;
   display: flex;
   overflow: hidden;
 }
-.restaurant .card a .card__img img {
+.card__restaurant .card__img img {
   object-fit: cover;
   width: 100%;
+}
+.card__restaurant .card__label {
+  padding: 15px;
+}
+.card__restaurant .card__label__like .far {
+  color: #aaa;
+}
+
+footer {
+  background-color: #343A40;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+footer h2 {
+  font-family: "Shrikhand", normal;
+  font-size: 20px;
+  color: white;
+}
+footer ul li {
+  line-height: 1.7;
+}
+footer ul li i {
+  width: 25px;
+  color: #fff;
+}
+footer ul li span {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
