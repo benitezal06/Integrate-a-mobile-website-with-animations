@@ -79,9 +79,26 @@
         width: 95% ;
         margin: 20px auto;
         padding: 20px 33px;
-    }
-}
+        &:nth-child(3){background-color:#f2eafb}
 
+        span.number{
+            border-radius:50%;
+            background-color: $primary-color;
+            color: #fff;
+            position: absolute;
+            left: 20px;
+            width: 24px;
+            line-height: 24px;
+            text-align: center;     
+        }
+        i.fas{
+            color:#aaa;
+            &.fa-store{color: $primary-color;}
+        }
+        
+
+    }
+}          
 
 .restaurant{
     background-color:#f6f6f6;
@@ -110,10 +127,11 @@
         img{
             object-fit: cover;
             width: 100%;
-            transition: ease-in-out;
+            transform: (1);
+            transition: transform 350ms ease-in-out;
             
-            :hover{
-                transform: 250ms;
+            &:hover{
+                transform: scale(1.15)
             }
         }
 
@@ -121,10 +139,21 @@
     }
     .card__label{
         padding: 15px;
+        display: flex;
+        justify-content: space-between;  
+        align-items: center; 
 
+        &__text{
+            h3{
+                padding-bottom: 5px;
+            }
+        }
+        
         &__like{
+            
              .far{
                 color: #aaa;
+                font-size: 20px;
                 }
         }
     }
@@ -141,6 +170,7 @@ footer{
         font-family: 'Shrikhand', normal;
         font-size: 20px;
         color: white;
+        padding-bottom: 10px;
     }
 
     ul{
