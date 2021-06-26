@@ -23,19 +23,20 @@
         h2{
             font-family: 'Shrikhand', bold;
             margin-left: 30px;
-            cursor: pointer;
+            
         }
         i{
             font-size: 20px;
-            color: #aaa;
+            color: #fff;
+            border-color: yelow;
             cursor: pointer;
             transition: all 500ms ease 0ms;
-            stroke: none;
-
+            -webkit-text-stroke: 1px #aaa;
+            
             &:hover{
                 color: $secondary-color;
-                }  
-            
+                transform: scale(1.05);
+                }     
         }
     }
 }
@@ -54,14 +55,40 @@ form{
         }
     }
     .pallet__card{
-        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0 0 5px 0 #aaa;
+        line-height: 1.75;;
+        border-radius: 15px;
+        align-items: center;
+        margin: 15px;
+        overflow: hidden;
+
         &__text{
-            box-shadow: 0 0 5px 0 #aaa;
-            padding: 20px;
-            line-height: 1.75;;
-            border-radius: 15px;
-            align-items: center;
+            padding: 10px;
+            
         }
+
+        &__price{
+
+            span{
+                padding-right: 15px;
+            }
+            .checkmark{
+                height: 100%;
+                background-color: #99e2d0;
+                padding: 32px;
+                border-radius: 0 14px 14px 0;
+                
+                
+                i{ 
+                    color: white;
+                    font-size: 20px; 
+                    
+                }
+            };
+        }
+
     }
     .pallet__btn{
         display: flex;
@@ -80,8 +107,13 @@ form{
             color: #fff;
             width: 225px;
             height: 40px;
+            transition: transform 450ms, background-color 300ms 150ms;
+            
+
+            &:hover{
+                transform: scale(1.05);
+                background: linear-gradient(350deg, $secondary-color 100%, #ffc6ef 100%);
+            }
         }
     }
 }
-
-

@@ -32,6 +32,7 @@ body {
   border: none;
   background-color: #dddddd;
   height: 44px;
+  outline: none;
 }
 .search__btn {
   display: flex;
@@ -59,6 +60,11 @@ body {
   color: #fff;
   width: 225px;
   height: 40px;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+.search__btn button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(350deg, #FF79DA 100%, #ffc6ef 100%);
 }
 .search__input::placeholder {
   text-align: center;
@@ -145,9 +151,17 @@ body {
 .card__restaurant .card__label__text h3 {
   padding-bottom: 5px;
 }
-.card__restaurant .card__label__like .far {
-  color: #aaa;
+.card__restaurant .card__label__like i {
   font-size: 20px;
+  color: #fff;
+  border-color: yelow;
+  cursor: pointer;
+  transition: all 500ms ease 0ms;
+  -webkit-text-stroke: 1px #aaa;
+}
+.card__restaurant .card__label__like i:hover {
+  color: #FF79DA;
+  transform: scale(1.05);
 }
 
 footer {
@@ -198,17 +212,18 @@ footer ul li span {
 .fullPallete__header h2 {
   font-family: "Shrikhand", bold;
   margin-left: 30px;
-  cursor: pointer;
 }
 .fullPallete__header i {
   font-size: 20px;
-  color: #aaa;
+  color: #fff;
+  border-color: yelow;
   cursor: pointer;
   transition: all 500ms ease 0ms;
-  stroke: none;
+  -webkit-text-stroke: 1px #aaa;
 }
 .fullPallete__header i:hover {
   color: #FF79DA;
+  transform: scale(1.05);
 }
 
 form h2 {
@@ -225,14 +240,30 @@ form h2:before {
   background-color: #99e2d0;
 }
 form .pallet__card {
-  padding: 10px;
-}
-form .pallet__card__text {
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 0 5px 0 #aaa;
-  padding: 20px;
   line-height: 1.75;
   border-radius: 15px;
   align-items: center;
+  margin: 15px;
+  overflow: hidden;
+}
+form .pallet__card__text {
+  padding: 10px;
+}
+form .pallet__card__price span {
+  padding-right: 15px;
+}
+form .pallet__card__price .checkmark {
+  height: 100%;
+  background-color: #99e2d0;
+  padding: 32px;
+  border-radius: 0 14px 14px 0;
+}
+form .pallet__card__price .checkmark i {
+  color: white;
+  font-size: 20px;
 }
 form .pallet__btn {
   display: flex;
@@ -252,6 +283,11 @@ form .pallet__btn button {
   color: #fff;
   width: 225px;
   height: 40px;
+  transition: transform 450ms, background-color 300ms 150ms;
+}
+form .pallet__btn button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(350deg, #FF79DA 100%, #ffc6ef 100%);
 }
 
 .loader_wrapper {
