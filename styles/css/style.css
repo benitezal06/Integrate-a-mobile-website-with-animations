@@ -219,19 +219,27 @@ footer ul li span {
   color: #fff;
 }
 
+.nav__wrap {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 .nav__wrap .nav__back {
   font-size: 20px;
-  display: flex;
+  display: inline-block;
   justify-items: flex-start;
+  margin-right: 27%;
 }
 
 .fullPallete {
   position: relative;
 }
 .fullPallete__img img {
-  height: 75%;
+  height: 252px;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
+  object-fit: cover;
 }
 .fullPallete__header {
   display: flex;
@@ -239,8 +247,8 @@ footer ul li span {
   justify-content: space-between;
   margin: 20px;
   border-radius: 30px 30px 0 0;
-  position: absolute;
-  top: 190px;
+  position: relative;
+  top: -50px;
   left: -20px;
   padding: 20px;
   width: 100%;
@@ -265,7 +273,6 @@ footer ul li span {
 
 form h2 {
   margin: 20px;
-  padding-top: 50px;
   position: relative;
 }
 form h2:before {
@@ -325,6 +332,7 @@ form .pallet__card__price.checkmark:before {
   border-radius: 0px 10px 10px 0px;
   transition: all 0.2s linear 0s;
   text-align: center;
+  cursor: pointer;
 }
 form .pallet__card__price.checkmark:hover {
   text-indent: -130px;
@@ -424,6 +432,16 @@ form .pallet__btn button:hover {
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu,
+.card__restaurant {
+    margin: 20px 300px;
+  }
+
+  .restaurant h2 {
+    margin: 20px 300px;
   }
 }
 

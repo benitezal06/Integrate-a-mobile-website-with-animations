@@ -1,0 +1,15 @@
+@include media-md{
+
+}
+
+@include media-lg{
+    .menu,
+    .card__restaurant {
+        margin: 20px 300px;
+    }
+    .restaurant{
+        h2{
+            margin: 20px 300px;  
+        }
+    }
+}
