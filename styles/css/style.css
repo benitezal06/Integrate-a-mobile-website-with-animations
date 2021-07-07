@@ -443,6 +443,21 @@ form .pallet__btn button:hover {
   .restaurant h2 {
     margin: 20px 300px;
   }
+
+  .pallet {
+    margin: 20px 300px;
+  }
+
+  .fullPallete h2, .fullPallete i {
+    margin: 20px 300px;
+  }
+
+  .nav__wrap {
+    margin: 20px 300px;
+  }
+  .nav__wrap .nav__back {
+    margin-left: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
