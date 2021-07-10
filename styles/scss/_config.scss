@@ -19,7 +19,7 @@ body {
     font-weight: normal;
 }
 
-.menu,.restaurant,footer{
+.menu,.restaurant, .pallet,footer{
     animation-delay: 900ms;
 	-webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	animation: slide-in-bottom 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

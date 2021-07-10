@@ -16,7 +16,7 @@ body {
   font-weight: normal;
 }
 
-.menu, .restaurant, footer {
+.menu, .restaurant, .pallet, footer {
   animation-delay: 900ms;
   -webkit-animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -449,7 +449,7 @@ form .pallet__btn button:hover {
   }
 
   .fullPallete h2, .fullPallete i {
-    margin: 20px 300px;
+    margin: 20px 290px;
   }
 
   .nav__wrap {
