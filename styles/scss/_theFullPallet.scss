@@ -44,7 +44,6 @@
         i{
             font-size: 20px;
             color: #fff;
-            border-color: yelow;
             cursor: pointer;
             transition: all 500ms ease 0ms;
             -webkit-text-stroke: 1px #aaa;
@@ -92,39 +91,38 @@ form{
         padding: 20px 0px;
         width: 150px;
         height: 100px;
-        border-radius: #aaa;
         overflow: hidden;
         padding-top: 38px;
         &.checkmark {
         transition: all 0.2s linear 0s;
     
         &:before {
-        content:"\f058";
-        color: white;
-        font-size: 20px;
-        font-family: 'Font Awesome 5 Free' ;
-        font-weight: 900;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        right: -50px;
-        width: 50px;
-        height: 100%;
-        background-color: #99e2d0;
-        border-radius: 0px 10px 10px 0px;
-        transition: all 0.2s linear 0s;
-        text-align: center;
-        cursor: pointer;
+            content:"\f058";
+            color: white;
+            font-size: 20px;
+            font-family: 'Font Awesome 5 Free' ;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            right: -50px;
+            width: 50px;
+            height: 100%;
+            background-color: #99e2d0;
+            border-radius: 0px 10px 10px 0px;
+            transition: all 0.2s linear 0s;
+            text-align: center;
+            cursor: pointer;
         }
     
         &:hover {
          text-indent: -130px;
       
         &:before {
-        right: 0;
-        text-indent: 0px;
+            right: 0;
+            text-indent: 0px;
         }
         }
     }

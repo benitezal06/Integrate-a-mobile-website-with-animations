@@ -22,18 +22,6 @@ body {
   animation: slide-in-bottom 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 @keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(1000px);
@@ -74,11 +62,8 @@ body {
   background-color: #f6f6f6;
 }
 .search__btn p {
-  padding-top: 40px;
+  padding: 30px;
   font-size: 18px;
-}
-.search__btn a {
-  padding-top: 40px;
 }
 .search__btn button {
   border: none;
@@ -108,8 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  counter-reset: 0;
-  padding-right: 0 50px;
+  padding-right: 50px;
 }
 .menu__list i {
   padding-right: 50px;
@@ -167,7 +151,6 @@ body {
 .card__restaurant .card__img img {
   object-fit: cover;
   width: 100%;
-  transform: 1;
   transition: transform 350ms ease-in-out;
 }
 .card__restaurant .card__img img:hover {
@@ -185,7 +168,6 @@ body {
 .card__restaurant .card__label__like i {
   font-size: 20px;
   color: #fff;
-  border-color: yelow;
   cursor: pointer;
   transition: all 500ms ease 0ms;
   -webkit-text-stroke: 1px #aaa;
@@ -261,7 +243,6 @@ footer ul li span {
 .fullPallete__header i {
   font-size: 20px;
   color: #fff;
-  border-color: yelow;
   cursor: pointer;
   transition: all 500ms ease 0ms;
   -webkit-text-stroke: 1px #aaa;
@@ -307,7 +288,6 @@ form .pallet__card__price {
   padding: 20px 0px;
   width: 150px;
   height: 100px;
-  border-radius: #aaa;
   overflow: hidden;
   padding-top: 38px;
 }
